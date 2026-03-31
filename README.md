@@ -1,4 +1,4 @@
-# 2026-GSoC-PINNE-Application-Test-Submission
+# 2026-GSoC-PINNDE-Application-Test-Submission
 This project implements a Physics-Informed Neural Network (PINN) in PyTorch to solve a parameterized underdamped harmonic oscillator. 
 
 ## Problem Description
