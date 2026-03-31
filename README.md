@@ -55,6 +55,8 @@ $$(z, \xi) ↦ (\sin(2\pi B(z,\xi)), \cos(2\pi B(z,\xi)))$$
 
 where $B$ is a fixed random projection matrix. 
 
+## All detailed PyTorch implementations and the result analysis (visualizations) are presented in the Jupyter Notebook uploaded. 
+
 
 
 
