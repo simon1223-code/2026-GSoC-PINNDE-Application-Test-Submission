@@ -1,2 +1,7 @@
 # 2026-GSoC-PINNE-Application-Test-Submission
-This project implements a Physics-Informed Neural Network (PINN) in PyTorch to solve a parameterized damped harmonic oscillator. The model incorporates Fourier feature embeddings and hard constraints to enforce boundary conditions exactly.
+This project implements a Physics-Informed Neural Network (PINN) in PyTorch to solve a parameterized underdamped harmonic oscillator. 
+
+Recall the Test Problem Setup:
+Consider a simplified damped harmonic oscillator with the angular frequency $\omega=1$,
+$$\frac{d^2x}{dz^2}+2\xi \frac{dx}{dz}+x =0$$
+with $z\in[0,20]$, $\xi\in[0.1, 0.4]$, and two initial conditions $x(0)=0.7$, $\frac{dx}{dz}(0)=1.2$. This oscillator is underdamped because $\xi< 1$.
