@@ -41,7 +41,7 @@ The weight factor here specificall amplifies the importance of correctly satisfy
 
 ## Improvement 
 
-With these hyperparameters designated for the training process (e.g. epoch=50000, colloaction=1000), the result of this model displays noticeable errors, especially when $z=0$ (loose boundary condition enforcement) and when $\xi$ is small (more oscillations). These issues are typical in standard PINNs: the neural network must simultaneously learn both the governing differential equation and the boundary/initial conditions, which can lead to multiple optimization objectives and slow convergence near constrained regions. Two specific improvements are proposed to alleviate these errors.
+With these hyperparameters designated for the training process (e.g. epoch=200000, colloaction=1000), the result of this model displays noticeable errors, especially when $z=0$ (loose boundary condition enforcement) and when $\xi$ is small (more oscillations). These issues are typical in standard PINNs: the neural network must simultaneously learn both the governing differential equation and the boundary/initial conditions, which can lead to multiple optimization objectives and slow convergence near constrained regions. Two specific improvements are proposed to alleviate these errors.
 
 - Hard Constraint Enforcement: Instead of enforcing initial conditions through an additional penalty term in the loss function, we can explicitly embed them into the solution ansatz. With this modification, the network wil always learn a correction term added to a function that already satisfies the initial conditions exactly. The hard constraint enforces the solution as:
 
